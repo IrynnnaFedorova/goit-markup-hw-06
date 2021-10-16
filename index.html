@@ -274,13 +274,13 @@
                 </li>
             </ul>
         </div>
-        <div class="footer-form-container">
+        <div class="footer-item">
             <form class="footer-form">
                 <div class="footer-mail-input">
                     <label for="footer-mail">Подпишитесь на рассылку</label>
                     <input class="helper" type="text" name="footer-mail" id="footer-mail" placeholder="E-mail">
                 </div>
-                <button type="submit">Подписаться <svg class="footer-form-icon" width="24px" height="24px">
+                <button type="submit" class="footer-item-button">Подписаться <svg class="footer-form-icon" width="24px" height="24px">
                         <use href="./symbol-defsmodal.svg#icon-icon-send"></use>
                     </svg></button>
                 </form>
@@ -295,24 +295,25 @@
                     class="close-links"><svg width="11" height="11">
                         <use href="./close.svg#icon-close"></use>
                     </svg></a></button>
+                    <form>
             <label class="modal-content-label">
                 Имя
                 <input class="modal-content-imput" type="text" name="user-name">
-                <svg class="modal-content-icon" width="18px" height="18px">
+                <svg class="modal-content-icon" width="12" height="12">
                     <use href="./symbol-defsmodal.svg#icon-people"></use>
                 </svg>
             </label>
             <label class="modal-content-label">
                 Телефон
                 <input class="modal-content-imput" type="tel" name="user-phone">
-                <svg class="modal-content-icon" width="18px" height="18px">
+                <svg class="modal-content-icon" width="12" height="12">
                     <use href="./symbol-defsmodal.svg#icon-tellform"></use>
                 </svg>
             </label>
             <label class="modal-content-label">
                 Почта
                 <input class="modal-content-imput" type="email" name="user-mail">
-                <svg class="modal-content-icon" width="18px" height="18px">
+                <svg class="modal-content-icon" width="12" height="12">
                     <use href="./symbol-defsmodal.svg#icon-letterform"></use>
                 </svg>
             </label>
@@ -321,18 +322,16 @@
                 <textarea class="modal-content-imput coments" name="user-comments" rows="10"
                     placeholder="Введите текст"></textarea>
             </label>
-            <div class="checkwindow">
                 <label class="modal-content-check">
                     <input class="indent" type="checkbox" name="user-contract">
                     <span class="input-check-castom">
-                        <svg width="14px" height="13px">
+                        <svg width="14" height="13">
                             <use href="./agreement.svg#icon-agreenment"></use>
-                        </svg></span>
-                    <a class="link-agreement" href=""> Соглашаюсь с рассылкой и принимаю</a><a class="link-contract"
-                        href="">Условия договора</a>
+                        </svg></span><p class="link-agreement">Соглашаюсь с рассылкой и принимаю</p>
+                    <a class="link-contract" href="">Условия договора</a>
                 </label>
-                <button class="modal-content-button" type="submit">Отправить</button>
-                </div>
+                <button class="modal-content-button" type="submit">Отправить</button></form>
+            <div class="checkwindow"></div>
             </div>
 </div>
 </div>

@@ -266,6 +266,11 @@ img {
   border: none;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #0677d4;
+}
+
 .decoration {
   color: var(--primary-text-color);
   text-transform: uppercase;
@@ -936,11 +941,17 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-.footer-form-container {
+/*.footer-form-container {
   float: left;
+}*/
+
+.footer-item:last-child {
+  margin-left: auto;
 }
 
-.footer-form-container button {
+/*.footer-item button*/
+
+.footer-item-button {
   margin-left: 12px;
   padding-top: 10px;
   padding-right: 28px;
@@ -949,17 +960,24 @@ img {
 
   display: flex;
   align-items: center;
-
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
-
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-item-button:hover,
+.footer-item-button:focus {
+  background-color: #0677d4;
 }
 
 .footer-form-icon {
@@ -994,11 +1012,17 @@ img {
   padding-bottom: 15px;
   padding-left: 16px;
   width: 358px;
+  height: 50px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+}
+
+.footer-mail-input input:hover,
+.footer-mail-input input:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .modal-content {
@@ -1060,7 +1084,7 @@ img {
 
 .modal-content-icon {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 12px;
 
   transition-property: fill;
@@ -1125,6 +1149,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-check-castom:hover,
+.input-check-castom:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .input-check-castom svg {
   display: inline-block;
   width: 16px;
@@ -1168,7 +1197,7 @@ img {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
