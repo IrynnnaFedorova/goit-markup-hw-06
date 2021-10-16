@@ -902,9 +902,14 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: scale(1);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+}
+
+.modal.is-hidden {
+  opacity: 0;
+  transform: scale(0);
 }
 
 .close-btn {
@@ -919,9 +924,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-links {
+/*.close-links {
   position: absolute;
   padding-top: 7px;
   padding-bottom: 9px;
@@ -933,10 +941,10 @@ img {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/
 
-.close-links:hover,
-.close-links:focus {
+.close-btn:hover,
+.close-btn:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
